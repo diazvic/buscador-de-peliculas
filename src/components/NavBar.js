@@ -1,7 +1,9 @@
+import "../styles/_NavBar.scss";
+
 const NavBar = () => {
 	return (
 		<div>
-			<nav>
+			<nav className="barra-navegacion">
 				<ul>
 					<li>Home</li>
 					<li>Ultimos Lanzamientos</li>

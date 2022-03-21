@@ -1,0 +1,16 @@
+@import "_Variables";
+@import "../App.scss";
+.barra-navegacion {
+	background-color: $color-principal;
+	color: white;
+	ul {
+		@include flex();
+		list-style: none;
+		height: 65px;
+	}
+	li {
+		font-size: $letra-links;
+		margin: 10px;
+		font-size: 15px;
+	}
+}
