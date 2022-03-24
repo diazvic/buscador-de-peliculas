@@ -5,6 +5,7 @@ import Home from "./components/Home";
 import DetallePeliculas from "./components/DetallePeliculas";
 import Buscar from "./components/Buscar";
 import Footer from "./components/Footer";
+
 const App = () => {
 	return (
 		<div>
