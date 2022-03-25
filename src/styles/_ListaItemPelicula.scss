@@ -1,0 +1,13 @@
+@import "_Variables";
+@import "../App.scss";
+
+.lista-peliculas {
+	display: flex;
+	.contenedor-imagen {
+		img {
+			width: 30px;
+			height: 30px;
+			border-radius: 100%;
+		}
+	}
+}
