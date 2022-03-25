@@ -1,0 +1,11 @@
+@import "_Variables";
+@import "../App.scss";
+.contenedor-lista-peliculas {
+	h2 {
+		text-align: center;
+		color: $color-titulo;
+		background-color: $color-principal;
+		position: fixed;
+		font-family: $letra-links;
+	}
+}

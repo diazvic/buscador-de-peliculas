@@ -1,12 +1,18 @@
 import ListaPeliculas from "./ListaPeliculas";
-
+import "../styles/_Home.scss";
+import "../styles/_ListaPeliculas.scss";
 const Home = () => {
 	return (
-		<section>
-			Home
-			<ListaPeliculas titulo="Peliculas Populares" url="popular" />
-			<ListaPeliculas titulo="Peliculas Mejor Puntuadas" url="top_rated" />
-			<ListaPeliculas titulo="Peliculas por venir" url="upcoming" />
+		<section className="contenedor-peliculas">
+			<div className="div-lista-peliculas">
+				<ListaPeliculas titulo="Peliculas Populares" categoria="popular" />
+			</div>
+			<div className="div-lista-peliculas">
+				<ListaPeliculas
+					titulo="Peliculas Mejor Puntuadas"
+					categoria="top_rated"
+				/>
+			</div>
 		</section>
 	);
 };

@@ -1,0 +1,16 @@
+@import "_Variables";
+@import "../App.scss";
+
+.contenedor-peliculas {
+	display: flex;
+
+	.div-lista-peliculas {
+		background-color: aquamarine;
+		display: flex;
+		justify-content: center;
+		margin: 20px;
+		overflow-y: scroll;
+		height: 400px;
+		width: 45%;
+	}
+}
