@@ -8,7 +8,6 @@ const ListaPeliculas = ({ titulo, categoria }) => {
 	return (
 		<div className="contenedor-lista-peliculas">
 			<h2>{titulo}</h2>
-
 			{objetoPeliculas.peliculas.map((pelicula) => (
 				<div className="contenedor-peliculas" key={pelicula.id}>
 					<ListaItemPelicula
