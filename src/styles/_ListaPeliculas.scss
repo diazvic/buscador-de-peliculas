@@ -1,11 +1,17 @@
 @import "_Variables";
 @import "../App.scss";
 .contenedor-lista-peliculas {
+	width: 100%;
+	.contenedor-peliculas {
+		background-color: green;
+		margin: 5px;
+	}
 	h2 {
+		width: inherit;
 		text-align: center;
 		color: $color-titulo;
 		background-color: $color-principal;
-		position: fixed;
+		// position: fixed;
 		font-family: $letra-links;
 	}
 }

@@ -5,12 +5,11 @@
 	display: flex;
 
 	.div-lista-peliculas {
-		background-color: aquamarine;
+		border: 1px solid black;
 		display: flex;
-		justify-content: center;
 		margin: 20px;
 		overflow-y: scroll;
-		height: 400px;
+		height: 500px;
 		width: 45%;
 	}
 }

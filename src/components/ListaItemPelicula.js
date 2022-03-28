@@ -7,18 +7,22 @@ const ListaItemPelicula = ({ titulo, imagen, link }) => {
 			<div className="contenedor-imagen">
 				<img src={imagen} />
 			</div>
-			<p>{titulo}</p>
-			<Link to={link}>
-				<ArrowForwardIosIcon
-					sx={{
-						bgcolor: "info.main",
-						color: "#ffffff",
-						borderRadius: "50%",
-						p: 1,
-					}}
-					className="icono-detalle"
-				/>
-			</Link>
+			<div>
+				<Link to={link} className="contenedor-icono">
+					<p>{titulo}</p>
+					<ArrowForwardIosIcon
+						sx={{
+							bgcolor: "info.main",
+							color: "#ffffff",
+							borderRadius: "50%",
+							p: 1,
+							m: 2,
+							fontSize: "30px",
+						}}
+						className="icono-detalle"
+					/>
+				</Link>
+			</div>
 		</div>
 	);
 };
