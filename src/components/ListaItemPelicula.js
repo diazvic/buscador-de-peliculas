@@ -7,8 +7,8 @@ const ListaItemPelicula = ({ titulo, imagen, link }) => {
 			<div className="contenedor-imagen">
 				<img src={imagen} />
 			</div>
-			<div className="contenedor-icono">
-				<Link to={link}>
+			<div>
+				<Link to={link} className="contenedor-icono">
 					<p>{titulo}</p>
 					<ArrowForwardIosIcon
 						sx={{

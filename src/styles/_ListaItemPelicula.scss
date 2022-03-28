@@ -6,8 +6,6 @@
 	// justify-content: space-around;
 	display: flex;
 
-	margin: 3px;
-	background-color: aqua;
 	width: 100%;
 	border: 1px solid #f3e9dd;
 
@@ -22,5 +20,6 @@
 	}
 	.contenedor-icono {
 		display: flex;
+		text-decoration: none;
 	}
 }
