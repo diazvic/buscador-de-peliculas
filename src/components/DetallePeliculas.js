@@ -2,7 +2,7 @@ import { useState } from "react";
 import Pagination from "@mui/material/Pagination";
 import Stack from "@mui/material/Stack";
 import useFetchPeliculas from "../hooks/useFetchPeliculas";
-const DetallePeliculas = (pagina) => {
+const DetallePeliculas = (categoria, pagina) => {
 	const [page, setPage] = useState(1);
 	const handleChange = (event, value) => {
 		setPage(value);

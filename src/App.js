@@ -5,7 +5,8 @@ import Home from "./components/Home";
 import DetallePeliculas from "./components/DetallePeliculas";
 import Buscar from "./components/Buscar";
 import Footer from "./components/Footer";
-
+import UltimosLanzamientos from "./components/UltimosLanzamientos";
+import Populares from "./components/Populares";
 const App = () => {
 	return (
 		<div>
@@ -13,12 +14,15 @@ const App = () => {
 				<NavBar />
 				<Routes>
 					<Route path="/" element={<Home />} />
-					<Route path="/ultimoslanzamientos" element={<DetallePeliculas />} />
+					<Route
+						path="/ultimoslanzamientos"
+						element={<UltimosLanzamientos />}
+					/>
 					<Route
 						path="pelicula/:idDetallePelicula"
 						element={<DetallePeliculas />}
 					/>
-					<Route path="/populares" element={<DetallePeliculas />} />
+					<Route path="/populares" element={<Populares />} />
 					<Route path="/buscar" element={<Buscar />} />
 				</Routes>
 				<Footer />
