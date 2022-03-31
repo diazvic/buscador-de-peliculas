@@ -5,6 +5,8 @@ main {
 		@include flex-justify();
 		margin: 5px;
 		padding: 10px;
+		color: $color-principal;
+		font-family: $letra-links;
 	}
 	.contenedor-tarjetas-peliculas {
 		display: flex;
