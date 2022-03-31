@@ -1,24 +1,25 @@
 import useFetchPeliculas from "../hooks/useFetchPeliculas";
 import TarjetaPeliculas from "./TarjetaPeliculas";
-
+import "../styles/_TarjetaPeliculas.scss";
+import "../styles/_UltimosLanzamientos.scss";
 const UltimosLanzamientos = () => {
 	const categoria = "now_playing";
 	const objetoPeliculas = useFetchPeliculas(categoria);
 
 	return (
-		<div>
+		<main>
 			<h2>Ultimos Lanzamientos</h2>
-			{objetoPeliculas.peliculas.map((pelicula) => (
-				<div className="contenedor-peliculas" key={pelicula.id}>
+			<div className="contenedor-tarjetas-peliculas">
+				{objetoPeliculas.peliculas.map((pelicula) => (
 					<TarjetaPeliculas
+						key={pelicula.id}
 						titulo={pelicula.title}
-						imagen={`https://image.tmdb.org/t/p/w300/${pelicula.poster_path}`}
-						link={`/${pelicula.id}`}
+						imagen={`https://image.tmdb.org/t/p/w200/${pelicula.poster_path}`}
+						link={`/movie/${pelicula.id}`}
 					/>
-				</div>
-			))}
-			{/* aca paso las tarjetas */}
-		</div>
+				))}
+			</div>
+		</main>
 	);
 };
 export default UltimosLanzamientos;

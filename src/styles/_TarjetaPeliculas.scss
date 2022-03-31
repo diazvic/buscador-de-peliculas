@@ -1,0 +1,32 @@
+@import "_Variables";
+@import "../App.scss";
+.tarjeta-peliculas {
+	display: flex;
+	flex-wrap: wrap;
+	border: 1px solid #e8e8e8;
+	width: 200px;
+	height: 440px;
+	margin: 15px;
+	.link-tarjetas {
+		text-decoration: none;
+	}
+	article {
+		width: 195px;
+		height: 400px;
+		img {
+			height: 300px;
+			width: 100%;
+		}
+		p {
+			@include flex-center();
+			color: $color-principal;
+			height: 50px;
+		}
+		.contenedor-icono-tarjetas {
+			display: flex;
+			justify-content: center;
+			width: 198px;
+			background-color: $color-fondo-tarjetas;
+		}
+	}
+}

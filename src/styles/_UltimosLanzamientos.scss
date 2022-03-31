@@ -1,0 +1,13 @@
+@import "_Variables";
+@import "../App.scss";
+main {
+	h2 {
+		@include flex-justify();
+		margin: 5px;
+		padding: 10px;
+	}
+	.contenedor-tarjetas-peliculas {
+		display: flex;
+		flex-wrap: wrap;
+	}
+}
