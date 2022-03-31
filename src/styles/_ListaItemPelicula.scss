@@ -2,13 +2,9 @@
 @import "../App.scss";
 
 .lista-peliculas {
-	// @include flex();
-	// justify-content: space-around;
 	display: flex;
-
 	width: 100%;
 	border: 1px solid #f3e9dd;
-
 	.contenedor-imagen {
 		img {
 			width: 40px;
