@@ -2,6 +2,7 @@ import useFetchPeliculas from "../hooks/useFetchPeliculas";
 import TarjetaPeliculas from "./TarjetaPeliculas";
 import "../styles/_TarjetaPeliculas.scss";
 import "../styles/_UltimosLanzamientos.scss";
+
 const UltimosLanzamientos = () => {
 	const categoria = "now_playing";
 	const objetoPeliculas = useFetchPeliculas(categoria);

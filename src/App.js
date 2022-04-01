@@ -18,12 +18,12 @@ const App = () => {
 						path="/ultimoslanzamientos"
 						element={<UltimosLanzamientos />}
 					/>
-					<Route
-						path="pelicula/:idDetallePelicula"
-						element={<DetallePeliculas />}
-					/>
 					<Route path="/populares" element={<Populares />} />
 					<Route path="/buscar" element={<Buscar />} />
+					<Route
+						path="/movie/:idDetallePelicula"
+						element={<DetallePeliculas />}
+					/>
 				</Routes>
 				<Footer />
 			</BrowserRouter>
