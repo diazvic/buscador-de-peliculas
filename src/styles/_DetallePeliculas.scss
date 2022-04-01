@@ -1,0 +1,36 @@
+@import "_Variables";
+@import "../App.scss";
+.contenedor-detalle-pelicula {
+	position: relative;
+	.imagen-fondo {
+		height: 100vh;
+		filter: brightness(50%);
+	}
+	.contenedor-detalle {
+		display: flex;
+		position: absolute;
+		top: 150px;
+		left: 200px;
+		.detalle-texto {
+			display: flex;
+			flex-direction: column;
+			color: $color-titulo;
+			width: 55%;
+			margin: 10px;
+			div {
+				display: flex;
+				span {
+					margin-left: 15px;
+					display: flex;
+					align-items: center;
+				}
+			}
+			.descripcion-detalle {
+				margin: 20px;
+			}
+			h4 {
+				margin: 10px;
+			}
+		}
+	}
+}
