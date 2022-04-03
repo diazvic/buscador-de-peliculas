@@ -12,17 +12,15 @@
 		top: 150px;
 		left: 200px;
 		.detalle-texto {
-			display: flex;
-			flex-direction: column;
+			@include flex-colummn();
 			color: $color-titulo;
 			width: 55%;
 			margin: 10px;
 			div {
 				display: flex;
 				span {
+					@include flex();
 					margin-left: 15px;
-					display: flex;
-					align-items: center;
 				}
 			}
 			.descripcion-detalle {
