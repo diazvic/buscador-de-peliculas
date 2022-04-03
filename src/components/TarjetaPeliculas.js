@@ -1,8 +1,7 @@
 import "../styles/_TarjetaPeliculas.scss";
 import { Link } from "react-router-dom";
 import VisibilityIcon from "@mui/icons-material/Visibility";
-import { useState } from "react";
-import DetallePeliculas from "./DetallePeliculas";
+
 const TarjetaPeliculas = ({ titulo, imagen, link }) => {
 	return (
 		<div className="tarjeta-peliculas">
