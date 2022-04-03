@@ -13,7 +13,7 @@ const ListaPeliculas = ({ titulo, categoria }) => {
 					<ListaItemPelicula
 						titulo={pelicula.title}
 						imagen={`https://image.tmdb.org/t/p/w200/${pelicula.poster_path}`}
-						link={`/${pelicula.id}`}
+						link={`/movie/${pelicula.id}`}
 					/>
 				</div>
 			))}
