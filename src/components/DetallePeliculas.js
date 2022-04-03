@@ -3,7 +3,7 @@ import "../styles/_DetallePeliculas.scss";
 import Pagination from "@mui/material/Pagination";
 import Stack from "@mui/material/Stack";
 import { useParams } from "react-router-dom";
-import { detalleImagenFondo } from "../utils/Variables";
+
 const DetallePeliculas = () => {
 	const params = useParams();
 	const [peliculaDetalle, setPeliculaDetalle] = useState([]);
