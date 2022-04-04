@@ -6,10 +6,10 @@ const ListaItemPelicula = ({ titulo, imagen, link }) => {
 		<div className="lista-peliculas">
 			<div className="contenedor-imagen">
 				<img src={imagen} />
+				<p>{titulo}</p>
 			</div>
-			<div>
+			<div className="contenedor-link">
 				<Link to={link} className="contenedor-icono">
-					<p>{titulo}</p>
 					<ArrowForwardIosIcon
 						sx={{
 							bgcolor: "info.main",
