@@ -1,14 +1,12 @@
 @import "_Variables";
 @import "../App.scss";
-article {
+.tarjeta-carrusel {
 	background-color: $color-fondo-carousel;
 	width: 35%;
-	display: flex;
+	@include flex-center();
 	flex-direction: column;
-	align-items: center;
-	justify-content: center;
-	position: relative;
-
+	opacity: 0.8;
+	margin: 20px;
 	h2 {
 		font-weight: $letra-links;
 		color: $color-principal;
