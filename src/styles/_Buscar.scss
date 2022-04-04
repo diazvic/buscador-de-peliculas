@@ -1,0 +1,11 @@
+@import "_Variables";
+@import "../App.scss";
+
+form {
+	label {
+		input {
+			width: 50%;
+			margin: 20px;
+		}
+	}
+}

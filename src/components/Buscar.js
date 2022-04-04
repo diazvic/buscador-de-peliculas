@@ -1,5 +1,12 @@
+import "../styles/_Buscar.scss";
 const Buscar = () => {
-	return <div>Buscar</div>;
+	return (
+		<form>
+			<label>
+				<input type="text"></input>
+			</label>
+		</form>
+	);
 };
 
 export default Buscar;
