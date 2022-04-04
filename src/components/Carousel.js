@@ -30,7 +30,6 @@ const Carousel = ({ categoria }) => {
 								backgroundRepeat: "no-repeat",
 								backgroundSize: "cover",
 								backgroundPosition: "center",
-								backgroundColor: "red",
 							}}
 						></div>
 						<TarjetaCarousel
