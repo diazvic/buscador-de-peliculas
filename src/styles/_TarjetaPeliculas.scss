@@ -1,8 +1,7 @@
 @import "_Variables";
 @import "../App.scss";
 .tarjeta-peliculas {
-	display: flex;
-	flex-wrap: wrap;
+	@include flex-wrap();
 	border: 1px solid #e8e8e8;
 	width: 200px;
 	height: 440px;
@@ -23,8 +22,7 @@
 			height: 50px;
 		}
 		.contenedor-icono-tarjetas {
-			display: flex;
-			justify-content: center;
+			@include flex-justify();
 			width: 198px;
 			background-color: $color-fondo-tarjetas;
 		}

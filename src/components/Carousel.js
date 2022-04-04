@@ -4,17 +4,17 @@ import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
 import "../styles/_Carousel.scss";
 import TarjetaCarousel from "./TarjetaCarousel";
+import { Brightness1 } from "@mui/icons-material";
 const Carousel = ({ categoria }) => {
 	const objetoPeliculas = useFetchPeliculas(categoria);
-	console.log("carrusel", objetoPeliculas);
 
 	const settings = {
 		dots: true,
 		infinite: true,
-		speed: 500,
 		slidesToShow: 1,
 		slidesToScroll: 1,
-		autoPlaySpeed: true,
+		autoplay: true,
+		autoplaySpeed: 2000,
 	};
 	return (
 		<div>
@@ -30,13 +30,19 @@ const Carousel = ({ categoria }) => {
 								backgroundRepeat: "no-repeat",
 								backgroundSize: "cover",
 								backgroundPosition: "center",
+								width: "100%",
+								height: "100%",
+								display: "flex",
+								justifyContent: "center",
+								alignItems: "flex-end",
 							}}
-						></div>
-						<TarjetaCarousel
-							titulo={pelicula.title}
-							informacion={pelicula.overview}
-							link={`/movie/${pelicula.id}`}
-						/>
+						>
+							<TarjetaCarousel
+								titulo={pelicula.title}
+								informacion={pelicula.overview}
+								link={`/movie/${pelicula.id}`}
+							/>
+						</div>
 					</div>
 				))}
 			</Slider>

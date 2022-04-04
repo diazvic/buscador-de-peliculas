@@ -4,8 +4,10 @@ import "../styles/_Home.scss";
 import "../styles/_ListaPeliculas.scss";
 const Home = () => {
 	return (
-		<section>
-			<Carousel categoria="now_playing" />
+		<>
+			<section>
+				<Carousel categoria="now_playing" />
+			</section>
 			<main className="contenedor-peliculas">
 				<div className="div-lista-peliculas">
 					<ListaPeliculas titulo="Peliculas Populares" categoria="popular" />
@@ -17,7 +19,7 @@ const Home = () => {
 					/>
 				</div>
 			</main>
-		</section>
+		</>
 	);
 };
 
