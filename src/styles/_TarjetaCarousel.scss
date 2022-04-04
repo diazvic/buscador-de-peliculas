@@ -1,0 +1,23 @@
+@import "_Variables";
+@import "../App.scss";
+article {
+	background-color: $color-fondo-carousel;
+	width: 35%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	position: relative;
+
+	h2 {
+		font-weight: $letra-links;
+		color: $color-principal;
+	}
+	button {
+		background-color: $color-link-tarjetas;
+		color: $color-titulo;
+		border: none;
+		margin: 5px;
+		padding: 10px;
+	}
+}
