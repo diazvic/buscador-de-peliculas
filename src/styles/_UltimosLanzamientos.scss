@@ -9,7 +9,9 @@ main {
 		font-family: $letra-links;
 	}
 	.contenedor-tarjetas-peliculas {
-		display: flex;
-		flex-wrap: wrap;
+		@include flex-wrap();
+	}
+	.contenedor-paginado {
+		@include flex-justify();
 	}
 }
