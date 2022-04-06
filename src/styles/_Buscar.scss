@@ -1,0 +1,16 @@
+@import "_Variables";
+@import "../App.scss";
+
+form {
+	margin: 20px;
+	label {
+		h1 {
+			color: $color-principal;
+			font-family: $letra-links;
+			@include flex-justify();
+		}
+	}
+}
+.contenedor-tarjetas-peliculas {
+	@include flex-wrap();
+}
