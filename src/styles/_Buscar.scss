@@ -2,10 +2,15 @@
 @import "../App.scss";
 
 form {
+	margin: 20px;
 	label {
-		input {
-			width: 50%;
-			margin: 20px;
+		h1 {
+			color: $color-principal;
+			font-family: $letra-links;
+			@include flex-justify();
 		}
 	}
+}
+.contenedor-tarjetas-peliculas {
+	@include flex-wrap();
 }
