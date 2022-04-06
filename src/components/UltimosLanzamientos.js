@@ -1,12 +1,18 @@
+import { useState } from "react";
 import useFetchPeliculas from "../hooks/useFetchPeliculas";
 import TarjetaPeliculas from "./TarjetaPeliculas";
+import Paginado from "./Paginado";
 import "../styles/_TarjetaPeliculas.scss";
 import "../styles/_UltimosLanzamientos.scss";
 
 const UltimosLanzamientos = () => {
+	const [pagina, setPagina] = useState(1);
 	const categoria = "now_playing";
-	const objetoPeliculas = useFetchPeliculas(categoria);
+	const objetoPeliculas = useFetchPeliculas(categoria, pagina);
 
+	const handleChange = (event, value) => {
+		setPagina(value);
+	};
 	return (
 		<main>
 			<h2>Ultimos Lanzamientos</h2>
@@ -19,6 +25,13 @@ const UltimosLanzamientos = () => {
 						link={`/movie/${pelicula.id}`}
 					/>
 				))}
+			</div>
+			<div className="contenedor-paginado">
+				<Paginado
+					handleChange={handleChange}
+					pagina={pagina}
+					totalPaginas={objetoPeliculas.totalPaginas}
+				/>
 			</div>
 		</main>
 	);

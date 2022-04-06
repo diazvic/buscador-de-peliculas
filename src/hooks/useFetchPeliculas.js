@@ -1,11 +1,10 @@
 import { useState, useEffect } from "react";
-// import { urlBase, apiKey, queryParamLenguaje } from "../utils/Variables";
+
 const useFetchPeliculas = (categoria, pagina) => {
 	const [arrayPeliculas, setPeliculas] = useState([]);
 	const [loader, setLoader] = useState(false);
-	const [totalPages, setTotalPages] = useState(1);
-	// const url = `${urlBase}${apiKey}${queryParamLenguaje}=es`;
-	//https://api.themoviedb.org/3/movie/upcoming?api_key=<<api_key>>&language=en-US&page=1
+	const [totalPaginas, setTotalPaginas] = useState(1);
+
 	useEffect(() => {
 		setLoader(true);
 		fetch(
@@ -15,14 +14,14 @@ const useFetchPeliculas = (categoria, pagina) => {
 			.then((data) => {
 				setLoader(false);
 				setPeliculas(data.results);
-				setTotalPages(data.total_pages);
+				setTotalPaginas(data.total_pages);
 			});
 	}, [pagina]);
 
 	return {
 		peliculas: arrayPeliculas,
 		loader: loader,
-		totalPages: totalPages,
+		totalPaginas: totalPaginas,
 	};
 };
 
