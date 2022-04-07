@@ -13,12 +13,7 @@ const ListaPeliculas = ({ titulo, categoria }) => {
 				<div className="contenedor-peliculas" key={pelicula.id}>
 					<ListaItemPelicula
 						titulo={pelicula.title}
-						imagen={
-							pelicula.poster_path
-								? `
-						https://image.tmdb.org/t/p/w200/${pelicula.poster_path}`
-								: imagenBackup
-						}
+						imagen={`https://image.tmdb.org/t/p/w200/${pelicula.poster_path}`}
 						link={`/movie/${pelicula.id}`}
 					/>
 				</div>
