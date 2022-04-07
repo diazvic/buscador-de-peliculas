@@ -1,6 +1,5 @@
 import useFetchPeliculas from "../hooks/useFetchPeliculas";
 import ListaItemPelicula from "./ListaItemPelicula";
-import imagenBackup from "../imagenes/imagenBackup.png";
 import "../styles/_ListaPeliculas.scss";
 
 const ListaPeliculas = ({ titulo, categoria }) => {
