@@ -4,6 +4,7 @@ import TarjetaPeliculas from "./TarjetaPeliculas";
 import Paginado from "./Paginado";
 import "../styles/_TarjetaPeliculas.scss";
 import "../styles/_UltimosLanzamientos.scss";
+import imagenBackup from "../imagenes/imagenBackup.png";
 
 const UltimosLanzamientos = () => {
 	const [pagina, setPagina] = useState(1);
@@ -21,7 +22,12 @@ const UltimosLanzamientos = () => {
 					<TarjetaPeliculas
 						key={pelicula.id}
 						titulo={pelicula.title}
-						imagen={`https://image.tmdb.org/t/p/w200/${pelicula.poster_path}`}
+						imagen={
+							pelicula.poster_path
+								? `
+						https://image.tmdb.org/t/p/w200/${pelicula.poster_path}`
+								: imagenBackup
+						}
 						link={`/movie/${pelicula.id}`}
 					/>
 				))}
