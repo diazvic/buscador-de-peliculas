@@ -1,5 +1,6 @@
 import useFetchPeliculas from "../hooks/useFetchPeliculas";
 import ListaItemPelicula from "./ListaItemPelicula";
+import imagenBackup from "../imagenes/imagenBackup.png";
 import "../styles/_ListaPeliculas.scss";
 
 const ListaPeliculas = ({ titulo, categoria }) => {
@@ -12,7 +13,12 @@ const ListaPeliculas = ({ titulo, categoria }) => {
 				<div className="contenedor-peliculas" key={pelicula.id}>
 					<ListaItemPelicula
 						titulo={pelicula.title}
-						imagen={`https://image.tmdb.org/t/p/w200/${pelicula.poster_path}`}
+						imagen={
+							pelicula.poster_path
+								? `
+						https://image.tmdb.org/t/p/w200/${pelicula.poster_path}`
+								: imagenBackup
+						}
 						link={`/movie/${pelicula.id}`}
 					/>
 				</div>
