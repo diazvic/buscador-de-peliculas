@@ -47,7 +47,11 @@ const Carousel = ({ categoria }) => {
 						>
 							<TarjetaCarousel
 								titulo={pelicula.title}
-								informacion={pelicula.overview}
+								informacion={
+									pelicula.overview.lenght < 140
+										? pelicula.overview
+										: pelicula.overview.slice(0, 137) + " ..."
+								}
 								link={`/movie/${pelicula.id}`}
 							/>
 						</div>

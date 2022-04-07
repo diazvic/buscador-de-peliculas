@@ -7,9 +7,13 @@
 	flex-direction: column;
 	opacity: 0.8;
 	margin: 20px;
+	border-radius: 10px;
 	h2 {
 		font-weight: $letra-links;
 		color: $color-principal;
+	}
+	p {
+		padding: 10px;
 	}
 	button {
 		background-color: $color-link-tarjetas;

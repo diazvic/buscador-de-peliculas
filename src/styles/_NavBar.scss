@@ -1,18 +1,28 @@
 @import "_Variables";
 @import "../App.scss";
 .barra-navegacion {
+	@include flex();
 	background-color: $color-principal;
+
+	.popcorn {
+		font-size: 60px;
+		color: white;
+		margin: 15px;
+	}
 
 	ul {
 		@include flex();
+		align-items: flex-end;
 		list-style: none;
 		height: 65px;
+		padding-inline-start: 0px;
 	}
-	li {
-		font-size: $letra-links;
-		margin: 10px;
-		font-size: 15px;
+
+	.icono-nav {
+		font-size: 35px;
+		margin: 0px 20px 0px 20px;
 	}
+
 	.link-nav {
 		text-decoration: none;
 		color: $color-titulo;
