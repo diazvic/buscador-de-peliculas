@@ -14,3 +14,9 @@ form {
 .contenedor-tarjetas-peliculas {
 	@include flex-wrap();
 }
+@media screen and (max-width: 576px) {
+	.contenedor-tarjetas-peliculas {
+		display: flex;
+		justify-content: center;
+	}
+}

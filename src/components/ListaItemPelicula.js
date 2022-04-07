@@ -5,7 +5,7 @@ const ListaItemPelicula = ({ titulo, imagen, link }) => {
 	return (
 		<div className="lista-peliculas">
 			<div className="contenedor-imagen">
-				<img src={imagen} />
+				<img alt={titulo} src={imagen} />
 				<p>{titulo}</p>
 			</div>
 			<div className="contenedor-link">

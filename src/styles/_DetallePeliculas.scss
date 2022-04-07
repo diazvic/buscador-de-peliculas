@@ -12,7 +12,7 @@
 		top: 150px;
 		left: 200px;
 		.detalle-texto {
-			@include flex-colummn();
+			@include flex-column();
 			color: $color-titulo;
 			width: 55%;
 			margin: 10px;
@@ -28,6 +28,19 @@
 			}
 			h4 {
 				margin: 10px;
+			}
+		}
+	}
+}
+@media screen and (max-width: 576px) {
+	.contenedor-detalle-pelicula {
+		.contenedor-detalle {
+			left: 0;
+			img {
+				display: none;
+			}
+			.detalle-texto {
+				width: 100%;
 			}
 		}
 	}

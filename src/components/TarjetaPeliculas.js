@@ -7,7 +7,7 @@ const TarjetaPeliculas = ({ titulo, imagen, link }) => {
 		<div className="tarjeta-peliculas">
 			<Link to={link} className="link-tarjetas">
 				<article>
-					<img src={imagen}></img>
+					<img alt={titulo} src={imagen}></img>
 					<p>{titulo}</p>
 					<div className="contenedor-icono-tarjetas">
 						<VisibilityIcon
