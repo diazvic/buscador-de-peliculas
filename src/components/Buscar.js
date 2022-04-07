@@ -3,7 +3,7 @@ import { useState, useEffect } from "react";
 import TarjetaPeliculas from "./TarjetaPeliculas";
 import "../styles/_Buscar.scss";
 import TextField from "@mui/material/TextField";
-
+import imagenBackup from "../imagenes/imagenBackup.png";
 const Buscar = () => {
 	const [busquedaParametros, setBusquedaParametros] = useSearchParams({
 		busqueda: "",
@@ -49,7 +49,12 @@ const Buscar = () => {
 					<TarjetaPeliculas
 						key={pelicula.id}
 						titulo={pelicula.title}
-						imagen={`https://image.tmdb.org/t/p/w200/${pelicula.poster_path}`}
+						imagen={
+							pelicula.poster_path
+								? `
+						https://image.tmdb.org/t/p/w200/${pelicula.poster_path}`
+								: imagenBackup
+						}
 						link={`/movie/${pelicula.id}`}
 					/>
 				))}
