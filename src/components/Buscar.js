@@ -19,7 +19,7 @@ const Buscar = () => {
 		e.preventDefault();
 	};
 	useEffect(() => {
-		if (busquedaParametros.get("busqueda") != "") {
+		if (busquedaParametros.get("busqueda")) {
 			fetch(
 				`https://api.themoviedb.org/3/search/movie?api_key=2d1d912928e5c447a9dcdeaf620cab9b&language=es&query=${busquedaParametros.get(
 					"busqueda"

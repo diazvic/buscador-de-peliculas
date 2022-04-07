@@ -17,6 +17,7 @@
 	.contenedor-peliculas {
 		@include flex-column();
 		width: 100%;
+		margin: 0;
 		.div-lista-peliculas {
 			width: 90%;
 		}

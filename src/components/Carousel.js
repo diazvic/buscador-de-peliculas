@@ -4,7 +4,7 @@ import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
 import "../styles/_Carousel.scss";
 import TarjetaCarousel from "./TarjetaCarousel";
-import { Brightness1 } from "@mui/icons-material";
+
 const Carousel = ({ categoria }) => {
 	const objetoPeliculas = useFetchPeliculas(categoria);
 
@@ -51,5 +51,3 @@ const Carousel = ({ categoria }) => {
 };
 
 export default Carousel;
-
-// fetch con now_playing

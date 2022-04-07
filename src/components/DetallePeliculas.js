@@ -1,7 +1,5 @@
 import { useState, useEffect } from "react";
 import "../styles/_DetallePeliculas.scss";
-import Pagination from "@mui/material/Pagination";
-import Stack from "@mui/material/Stack";
 import { useParams } from "react-router-dom";
 
 const DetallePeliculas = () => {

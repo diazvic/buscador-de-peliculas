@@ -32,3 +32,16 @@
 		}
 	}
 }
+@media screen and (max-width: 576px) {
+	.contenedor-detalle-pelicula {
+		.contenedor-detalle {
+			left: 0;
+			img {
+				display: none;
+			}
+			.detalle-texto {
+				width: 100%;
+			}
+		}
+	}
+}
