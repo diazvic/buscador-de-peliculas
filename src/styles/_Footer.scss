@@ -1,0 +1,27 @@
+@import "_Variables";
+@import "../App.scss";
+
+.footer {
+	background-color: $color-principal;
+	@include flex-center();
+	flex-direction: column;
+	height: 80px;
+	p {
+		color: $color-titulo;
+		font-family: $letra-links;
+	}
+	.footer-iconos {
+		list-style: none;
+		@include flex-center();
+		padding-inline-start: 0;
+		li {
+			a {
+				.footer-iconos {
+					color: $color-titulo;
+					font-size: 20px;
+					margin: 10px;
+				}
+			}
+		}
+	}
+}
