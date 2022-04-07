@@ -1,0 +1,48 @@
+@import "_Variables";
+@import "../App.scss";
+
+.footer {
+	background-color: $color-principal;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	height: 80px;
+	p {
+		color: $color-titulo;
+		font-family: $letra-links;
+	}
+	.footer-iconos {
+		list-style: none;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		li {
+			a {
+				.footer-iconos {
+					color: $color-titulo;
+					font-size: 20px;
+					margin: 10px;
+				}
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 576px) {
+	.footer-iconos {
+		list-style: none;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		li {
+			a {
+				.footer-iconos {
+					color: $color-titulo;
+					font-size: 20px;
+					margin: 0;
+				}
+			}
+		}
+	}
+}
