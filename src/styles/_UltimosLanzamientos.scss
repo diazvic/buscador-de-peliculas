@@ -17,6 +17,9 @@ main {
 }
 @media screen and (max-width: 576px) {
 	main {
+		h2 {
+			margin: 0;
+		}
 		.contenedor-tarjetas-peliculas {
 			display: flex;
 			justify-content: center;
