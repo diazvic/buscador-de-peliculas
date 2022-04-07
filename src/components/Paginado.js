@@ -8,7 +8,7 @@ const Paginado = ({ handleChange, totalPaginas, pagina }) => {
 				color="primary"
 				onChange={handleChange}
 				page={pagina}
-				size="large"
+				size={window.innerWidth > 576 ? "large" : "small"}
 			/>
 		</Stack>
 	);
