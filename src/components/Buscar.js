@@ -4,6 +4,7 @@ import TarjetaPeliculas from "./TarjetaPeliculas";
 import "../styles/_Buscar.scss";
 import TextField from "@mui/material/TextField";
 import imagenBackup from "../imagenes/imagenBackup.png";
+import { urlBase, apiKey, queryParamLenguaje } from "../utils/Variables";
 const Buscar = () => {
 	const [busquedaParametros, setBusquedaParametros] = useSearchParams({
 		busqueda: "",
@@ -21,7 +22,7 @@ const Buscar = () => {
 	useEffect(() => {
 		if (busquedaParametros.get("busqueda")) {
 			fetch(
-				`https://api.themoviedb.org/3/search/movie?api_key=2d1d912928e5c447a9dcdeaf620cab9b&language=es&query=${busquedaParametros.get(
+				`${urlBase}/search/movie?api_key=${apiKey}${queryParamLenguaje}&query=${busquedaParametros.get(
 					"busqueda"
 				)}`
 			)
