@@ -1,5 +1,11 @@
+import { Language } from "@mui/icons-material";
 import { useState, useEffect } from "react";
-
+import {
+	urlBase,
+	apiKey,
+	queryParamLenguaje,
+	queryParamPagina,
+} from "../utils/Variables";
 const useFetchPeliculas = (categoria, pagina) => {
 	const [arrayPeliculas, setPeliculas] = useState([]);
 	const [cargando, setCargando] = useState(false);
@@ -8,7 +14,7 @@ const useFetchPeliculas = (categoria, pagina) => {
 	useEffect(() => {
 		setCargando(true);
 		fetch(
-			`https://api.themoviedb.org/3/movie/${categoria}?api_key=2d1d912928e5c447a9dcdeaf620cab9b&language=es&page=${pagina}`
+			`${urlBase}/movie/${categoria}?api_key=${apiKey}${queryParamLenguaje}${queryParamPagina}${pagina}`
 		)
 			.then((res) => res.json())
 			.then((data) => {

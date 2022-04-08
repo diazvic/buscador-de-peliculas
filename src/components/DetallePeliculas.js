@@ -1,13 +1,14 @@
 import { useState, useEffect } from "react";
 import "../styles/_DetallePeliculas.scss";
 import { useParams } from "react-router-dom";
+import { urlBase, apiKey, queryParamLenguaje } from "../utils/Variables";
 
 const DetallePeliculas = () => {
 	const params = useParams();
 	const [peliculaDetalle, setPeliculaDetalle] = useState([]);
 	useEffect(() => {
 		fetch(
-			`https://api.themoviedb.org/3/movie/${params.idDetallePelicula}?api_key=2d1d912928e5c447a9dcdeaf620cab9b&language=es`
+			`${urlBase}/movie/${params.idDetallePelicula}?api_key=${apiKey}${queryParamLenguaje}`
 		)
 			.then((res) => res.json())
 			.then((data) => setPeliculaDetalle(data));
