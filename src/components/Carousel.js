@@ -5,9 +5,7 @@ import Slider from "react-slick";
 import "../styles/_Carousel.scss";
 import TarjetaCarousel from "./TarjetaCarousel";
 
-const Carousel = ({ categoria }) => {
-	const objetoPeliculas = useFetchPeliculas(categoria);
-
+const Carousel = ({ peliculas }) => {
 	const settings = {
 		dots: true,
 		infinite: true,
@@ -27,7 +25,7 @@ const Carousel = ({ categoria }) => {
 	return (
 		<div>
 			<Slider {...settings}>
-				{objetoPeliculas.peliculas.map((pelicula) => (
+				{peliculas.map((pelicula) => (
 					<div key={pelicula.id} className="contenedor-diapositivas">
 						<div
 							style={{

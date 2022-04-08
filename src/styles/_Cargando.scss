@@ -1,0 +1,6 @@
+@import "_Variables";
+@import "../App.scss";
+
+.cargando {
+	@include flex-center();
+}
