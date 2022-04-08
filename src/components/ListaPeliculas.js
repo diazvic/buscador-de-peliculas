@@ -1,4 +1,3 @@
-import useFetchPeliculas from "../hooks/useFetchPeliculas";
 import ListaItemPelicula from "./ListaItemPelicula";
 import "../styles/_ListaPeliculas.scss";
 

@@ -12,7 +12,7 @@ const DetallePeliculas = () => {
 		)
 			.then((res) => res.json())
 			.then((data) => setPeliculaDetalle(data));
-	}, []);
+	});
 	const fondoImagen =
 		peliculaDetalle.backdrop_path &&
 		`url("https://image.tmdb.org/t/p/original/${peliculaDetalle.backdrop_path}")`;
