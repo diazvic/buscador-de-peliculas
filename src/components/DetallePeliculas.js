@@ -13,16 +13,15 @@ const DetallePeliculas = () => {
 			.then((res) => res.json())
 			.then((data) => setPeliculaDetalle(data));
 	}, []);
-
+	const fondoImagen =
+		peliculaDetalle.backdrop_path &&
+		`url("https://image.tmdb.org/t/p/original/${peliculaDetalle.backdrop_path}")`;
 	return (
 		<div className="contenedor-detalle-pelicula">
 			<div
 				className="imagen-fondo"
 				style={{
-					backgroundImage:
-						"url(" +
-						` https://image.tmdb.org/t/p/original/${peliculaDetalle.backdrop_path}` +
-						")",
+					backgroundImage: fondoImagen,
 					backgroundRepeat: "no-repeat",
 					backgroundSize: "cover",
 					backgroundPosition: "center",
@@ -32,7 +31,10 @@ const DetallePeliculas = () => {
 				<div>
 					<img
 						alt="detalle de pelicula"
-						src={`https://image.tmdb.org/t/p/w300/${peliculaDetalle.poster_path}`}
+						src={
+							peliculaDetalle.poster_path &&
+							`https://image.tmdb.org/t/p/w300/${peliculaDetalle.poster_path}`
+						}
 					/>
 				</div>
 				<div className="detalle-texto">
