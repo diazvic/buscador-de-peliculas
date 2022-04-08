@@ -6,7 +6,7 @@ const TarjetaCarousel = ({ titulo, informacion, link }) => {
 			<h2>{titulo}</h2>
 			<p>{informacion}</p>
 			<Link to={link}>
-				<button>Ver mas...</button>
+				<button>Ver mas</button>
 			</Link>
 		</article>
 	);
