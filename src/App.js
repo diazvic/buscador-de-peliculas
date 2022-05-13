@@ -9,6 +9,7 @@ import UltimosLanzamientos from "./components/UltimosLanzamientos";
 import Populares from "./components/Populares";
 const App = () => {
 	return (
+		// este div es innecesario
 		<div>
 			<BrowserRouter>
 				<NavBar />
