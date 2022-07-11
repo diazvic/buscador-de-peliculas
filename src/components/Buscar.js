@@ -37,6 +37,7 @@ const Buscar = () => {
 		<>
 			<form onSubmit={handleSubmit}>
 				<label>
+					{/* recordá que el h1 es el titulo principal de la pagina */}
 					<h1>Busca tu pelicula</h1>
 					<TextField
 						sx={{ width: "100%", p: 1 }}
